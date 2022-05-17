@@ -21,6 +21,8 @@
 		A2AAFA86283419C0003CC8A0 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AAFA85283419C0003CC8A0 /* OnboardingCell.swift */; };
 		A2AAFA88283419DF003CC8A0 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AAFA87283419DF003CC8A0 /* OnboardingModel.swift */; };
 		A2AAFA8A28341A2E003CC8A0 /* ColorUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AAFA8928341A2E003CC8A0 /* ColorUtility.swift */; };
+		A2AAFA8D28341B5B003CC8A0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AAFA8C28341B5B003CC8A0 /* LoginViewController.swift */; };
+		A2AAFA8F28341B90003CC8A0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AAFA8E28341B90003CC8A0 /* LoginViewModel.swift */; };
 		CFC11938F3BB12CE0A7753C7 /* Pods_login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7FDE01D1249F38359557668 /* Pods_login.framework */; };
 		FD0430510E5A67836CBCDD78 /* Pods_login_loginUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE25E922BFC3DF8F88C64DA /* Pods_login_loginUITests.framework */; };
 /* End PBXBuildFile section */
@@ -65,6 +67,8 @@
 		A2AAFA85283419C0003CC8A0 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
 		A2AAFA87283419DF003CC8A0 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		A2AAFA8928341A2E003CC8A0 /* ColorUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtility.swift; sourceTree = "<group>"; };
+		A2AAFA8C28341B5B003CC8A0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A2AAFA8E28341B90003CC8A0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		C0BEE9E63B206D09759FF7B4 /* Pods_loginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_loginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D54BD31A5547BE336CE7B37D /* Pods-login.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-login.debug.xcconfig"; path = "Target Support Files/Pods-login/Pods-login.debug.xcconfig"; sourceTree = "<group>"; };
 		D7FDE01D1249F38359557668 /* Pods_login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,9 +155,9 @@
 				A2AAFA4F283410DA003CC8A0 /* SceneDelegate.swift */,
 				A2AAFA51283410DA003CC8A0 /* ViewController.swift */,
 				A2AAFA8928341A2E003CC8A0 /* ColorUtility.swift */,
-				A2AAFA832834193F003CC8A0 /* OnboardingViewController.swift */,
-				A2AAFA85283419C0003CC8A0 /* OnboardingCell.swift */,
-				A2AAFA87283419DF003CC8A0 /* OnboardingModel.swift */,
+				A2AAFA8C28341B5B003CC8A0 /* LoginViewController.swift */,
+				A2AAFA8E28341B90003CC8A0 /* LoginViewModel.swift */,
+				A2AAFA8B28341B43003CC8A0 /* Onboarding */,
 				A2AAFA53283410DA003CC8A0 /* Main.storyboard */,
 				A2AAFA56283410DE003CC8A0 /* Assets.xcassets */,
 				A2AAFA58283410DE003CC8A0 /* LaunchScreen.storyboard */,
@@ -177,6 +181,16 @@
 				A2AAFA70283410DE003CC8A0 /* loginUITestsLaunchTests.swift */,
 			);
 			path = loginUITests;
+			sourceTree = "<group>";
+		};
+		A2AAFA8B28341B43003CC8A0 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				A2AAFA832834193F003CC8A0 /* OnboardingViewController.swift */,
+				A2AAFA85283419C0003CC8A0 /* OnboardingCell.swift */,
+				A2AAFA87283419DF003CC8A0 /* OnboardingModel.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,9 +436,11 @@
 				A2AAFA86283419C0003CC8A0 /* OnboardingCell.swift in Sources */,
 				A2AAFA88283419DF003CC8A0 /* OnboardingModel.swift in Sources */,
 				A2AAFA4E283410DA003CC8A0 /* AppDelegate.swift in Sources */,
+				A2AAFA8D28341B5B003CC8A0 /* LoginViewController.swift in Sources */,
 				A2AAFA50283410DA003CC8A0 /* SceneDelegate.swift in Sources */,
 				A2AAFA8A28341A2E003CC8A0 /* ColorUtility.swift in Sources */,
 				A2AAFA842834193F003CC8A0 /* OnboardingViewController.swift in Sources */,
+				A2AAFA8F28341B90003CC8A0 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

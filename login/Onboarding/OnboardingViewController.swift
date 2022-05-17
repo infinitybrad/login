@@ -72,7 +72,7 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
                 {
                     self?.currentPosition = 2
                     print("go Login")
-                    
+                    self?.goLoginViewController()
                 }
                 else
                 {
@@ -90,7 +90,7 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         loginButton.rx.tap.asDriver()
             .drive(onNext:{ [weak self] in
                 
-              
+                self?.goLoginViewController()
                 
             })
             .disposed(by: bag)
@@ -114,7 +114,15 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         return models
     }
     
-    
+  
+    private func goLoginViewController()
+    {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let navi = storyboard.instantiateViewController(withIdentifier: "loginView") as! LoginViewController
+        self.present(navi, animated: true)
+        //self.navigationController?.pushViewController(navi, animated: true)
+        
+    }
   
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
